@@ -2,4 +2,7 @@ window:
   startup_mode: Maximized
 
 font:
+  normal:
+    family: BlexMono Nerd Font
+    style: Text
   size: 16.0
