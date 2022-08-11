@@ -70,5 +70,9 @@ precmd() {
     else
       PROMPT="${vcs_info_msg_0_}${arrow}"
     fi
+
+    if [[ -v VIRTUAL_ENV ]]; then
+        PROMPT="${bg_venv}${fg_venv} venv ${PROMPT}"
+    fi
 }
 
