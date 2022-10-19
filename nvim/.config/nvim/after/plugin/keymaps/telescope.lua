@@ -9,3 +9,7 @@ end)
 nnoremap('<leader>fb', function()
     require('telescope.builtin').buffers()
 end)
+
+nnoremap('<leader>fs', function()
+    require('telescope.builtin').live_grep()
+end)
