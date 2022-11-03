@@ -10,6 +10,8 @@ o.cursorline = true
 
 -- Command line
 o.cmdheight = 1
+-- Disable status line
+o.showmode = false
 
 -- Completions
 o.completeopt = { 'menuone', 'noselect' }

@@ -22,12 +22,17 @@ nnoremap('K', ':m .-2<CR>==')
 
 -- Insert Mode
 inoremap('jk', '<ESC>')
-vnoremap('<C-j>', '<Esc>:m .+1<CR>==gi')
-vnoremap('<C-k>', '<Esc>:m .-2<CR>==gi')
+inoremap('\'', '\'\'<ESC>i')
+inoremap('"', '""<ESC>i')
+inoremap('(', '()<ESC>i')
+inoremap('[', '[]<ESC>i')
+inoremap('{', '{}<ESC>i')
 
 -- Visual Mode
 vnoremap('J', ":m '>+1<CR>gv=gv")
 vnoremap('K', ":m '<-2<CR>gv=gv")
 
 -- Visual Block Mode
+vnoremap('<C-j>', '<Esc>:m .+1<CR>==gi')
+vnoremap('<C-k>', '<Esc>:m .-2<CR>==gi')
 
