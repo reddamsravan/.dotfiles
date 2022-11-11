@@ -29,10 +29,11 @@ inoremap('[', '[]<ESC>i')
 inoremap('{', '{}<ESC>i')
 
 -- Visual Mode
-vnoremap('J', ":m '>+1<CR>gv=gv")
-vnoremap('K', ":m '<-2<CR>gv=gv")
+vnoremap('jk', '<esc>')
+vnoremap('j', ":m '>+1<cr>gv=gv")
+vnoremap('k', ":m '<-2<cr>gv=gv")
 
--- Visual Block Mode
-vnoremap('<C-j>', '<Esc>:m .+1<CR>==gi')
+-- Visual block mode
+vnoremap('<c-j>', '<Esc>:m .+1<cr>==gi')
 vnoremap('<C-k>', '<Esc>:m .-2<CR>==gi')
 
