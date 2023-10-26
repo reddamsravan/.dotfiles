@@ -5,6 +5,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-# Colorize common commad outputs
-alias ls='ls -G'
+# ls
+alias ls='eza'
+alias ll='eza -l'
+
 alias grep='grep --color=auto'
