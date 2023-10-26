@@ -1,1 +1,15 @@
-require("cosmic")
+require 'user.launch'
+require 'user.options'
+require 'user.keymaps'
+require 'user.autocmds'
+
+Spec 'user.colorscheme'
+Spec 'user.treesitter'
+Spec 'user.mason'
+Spec 'user.lspconfig'
+Spec 'user.cmp'
+Spec 'user.telescope'
+Spec 'user.whichkey'
+Spec 'user.autopairs'
+
+require 'user.lazy'
