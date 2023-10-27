@@ -11,5 +11,7 @@ Spec 'user.cmp'
 Spec 'user.telescope'
 Spec 'user.whichkey'
 Spec 'user.autopairs'
+Spec 'user.lualine'
+Spec 'user.gitsigns'
 
 require 'user.lazy'
