@@ -3,6 +3,7 @@ local M = {
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
         {
+            { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
             'folke/neodev.nvim',
         },
     },

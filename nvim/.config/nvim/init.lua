@@ -13,5 +13,6 @@ Spec 'user.whichkey'
 Spec 'user.autopairs'
 Spec 'user.lualine'
 Spec 'user.gitsigns'
+Spec 'user.comment'
 
 require 'user.lazy'
