@@ -16,6 +16,10 @@ return {
 		-- auto pairs
 		require('mini.pairs').setup()
 
+		-- File tree
+		require('mini.files').setup()
+		vim.keymap.set('n', '\\', MiniFiles.open)
+
 		-- find any
 		require('mini.pick').setup()
 		vim.keymap.set('n', '<leader>sf', MiniPick.builtin.files)
@@ -29,7 +33,7 @@ return {
 		-- statusline
 		local statusline = require 'mini.statusline'
 		-- set use_icons to true if you have a Nerd Font
-		statusline.setup { use_icons = false }
+		statusline.setup { use_icons = false, }
 		---@diagnostic disable-next-line: duplicate-set-field
 		statusline.section_location = function()
 			return '%2l:%-2v'
