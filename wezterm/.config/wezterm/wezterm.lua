@@ -10,7 +10,7 @@ end
 config.color_scheme = "Catppuccin Mocha"
 
 -- Font
-config.font = wezterm.font("SF Mono")
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 14
 
 -- Padding
