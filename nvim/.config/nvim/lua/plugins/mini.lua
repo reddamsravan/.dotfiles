@@ -4,6 +4,9 @@ return {
 	config = function()
 		local options = { expr = true }
 
+		-- icons
+		require('mini.icons').setup()
+
 		-- start screen
 		require('mini.starter').setup()
 
