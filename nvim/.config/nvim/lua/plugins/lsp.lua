@@ -135,11 +135,12 @@ return {
       }
 
       vim.diagnostic.config {
+        severity_sort = true,
         virtual_text = false,
       }
-      -- Show line diagnostics automatically in hover window
-      vim.o.updatetime = 250
-      vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+      vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+      vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+      vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
     end,
   },
 }
