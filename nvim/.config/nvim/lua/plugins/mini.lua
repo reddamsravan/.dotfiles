@@ -33,6 +33,11 @@ return {
     -- surround
     require("mini.surround").setup()
 
+    require("mini.git").setup()
+    require("mini.visits").setup()
+
+    vim.keymap.set("n", "<leader>sr", MiniVisits.select_path)
+
     -- statusline
     local statusline = require "mini.statusline"
     -- set use_icons to true if you have a Nerd Font
