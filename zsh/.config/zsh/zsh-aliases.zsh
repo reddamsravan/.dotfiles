@@ -11,5 +11,5 @@ alias ll='eza -l'
 
 alias grep='grep --color=auto'
 
-
 alias vi='nvim'
+alias commit='bash ~/scripts/commit.sh'
